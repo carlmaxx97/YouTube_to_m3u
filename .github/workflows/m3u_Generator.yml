@@ -4,6 +4,9 @@ name: M3U generator
 
 # Controls when the action will run. 
 on:
+  push:
+    branches:
+    - master
   schedule:
     - cron: '0 0/3 * * *'
     
