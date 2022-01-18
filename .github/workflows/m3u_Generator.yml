@@ -54,7 +54,7 @@ jobs:
           
       - name: commit & push
         run: |
-          git commit -m "links are updated"
+          git diff-index --quiet HEAD || git commit -m 'links are updated'
           git push
           
           
